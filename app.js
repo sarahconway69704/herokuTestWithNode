@@ -17,16 +17,6 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/contact', (req, res) => {
-  res.sendfile(path.join(__dirname + '/views/contact.html'));
-  console.log('at the contact route');
-})
-
-app.get('/portfolio', (req, res) => {
-  res.send('on the portfolio page');
-  console.log('at the portfolio route');
-})
-
 app.listen(port, () => {
   console.log(`Server running at ${port}`)
 })
